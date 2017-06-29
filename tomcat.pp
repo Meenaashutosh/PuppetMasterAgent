@@ -1,8 +1,10 @@
-# Installation of java and tomcat(standalone)
 
+# Installation of java and tomcat(standalone)
+'''
 class { 'java':
   package => 'java-1.8.0-openjdk-devel',
 }
+'''
 tomcat::install { '/opt/tomcat':
   source_url => 'https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.0.M1/bin/apache-tomcat-9.0.0.M21.tar.gz',
 }
@@ -28,3 +30,4 @@ Finished catalog run in 1.96 seconds
 [root@demo-1 ~]# cd /opt/tomcat
 [root@demo-1 tomcat]# ls
 bin  conf  lib  LICENSE  logs  NOTICE  RELEASE-NOTES  RUNNING.txt  temp  webapps  work
+'''
