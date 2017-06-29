@@ -1,5 +1,5 @@
 
-# Installation of java and tomcat(standalone)
+# Installation of java and tomcat
 '''
 class { 'java':
   package => 'java-1.8.0-openjdk-devel',
