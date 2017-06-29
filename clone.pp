@@ -1,4 +1,4 @@
-#Git_Clone configuration (Standalone)
+#Git_Clone configuration
 
 #git_install.pp
 '''
@@ -11,7 +11,7 @@ git::config{'user.email':
   value     => 'ashutoshmeena111@gmial.com'
 }
 '''
-
+ #clone.pp
 vcsrepo { '/opt/puppet-docs': 
   ensure   => present, 
   provider => git,  
@@ -20,6 +20,7 @@ vcsrepo { '/opt/puppet-docs':
 
 
 #output
+'''
 [root@demo-1 manifests]# puppet apply  git_install.pp
 Warning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults
 Notice: Compiled catalog for demo-1 in environment production in 0.15 seconds
